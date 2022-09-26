@@ -1,0 +1,12 @@
+$fonts: ('Inter', 'Medium', 500),
+    ('Inter', 'Regular', 400),
+    ('Larken', 'Regular', 400),
+    ('Larken', 'Medium', 500),
+    ('Larken', 'Bold', 700);
+@each $font, $exp, $w in $fonts {
+    @font-face {
+        font-family: $font;
+        src: url("../fonts/#{$font}-#{$exp}.ttf");
+        font-weight: $w;
+    }
+}

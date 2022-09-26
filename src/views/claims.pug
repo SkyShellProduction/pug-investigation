@@ -1,0 +1,12 @@
+.claims__content 
+    .claims__left 
+        h3.claims__title Claims Investigators You Know, Like and Trusted for you.
+        p.claims__descr Sherlock is the insurance investigative agency of choice in terms of ethics, ability and professionalism. We are proud to serve you.
+        a.claims__link.spec__link(href="#") How It Works
+    .claims__right 
+        - var names = ['Background Checks', 'Asset Investigation', 'Criminal investigation', 'Fraud Investigation'] 
+        each val, i in names 
+            .claims__item 
+                .claims__img 
+                    img(src="../assets/img/claims0" + (i+1) + ".svg", alt="")
+                p.claims__name #{val}

@@ -1,0 +1,65 @@
+.private{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding-bottom: 130px;
+    }
+    &__left{
+        max-width: 568px;
+        width: 100%;
+    }
+    &__subject{
+        margin: 128px 0 28px;
+        font-size: 36px;
+        line-height: 140%;
+        color: #24232B;
+    }
+    &__name{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 100%;
+        color: #24232B;
+    }
+    &__descr{
+        font-family: 'Inter';
+        font-size: 18px;
+        line-height: 160%;
+        margin: 10px 0 28px;
+        color: #8A888D;
+        max-width: 401px;
+    }
+    &__right{
+        max-width: 507px;
+        width: 100%;
+        position: relative;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__elem{
+        margin-top: 46px;
+        max-width: 292px;
+        margin-left: auto;
+    }
+    &__abs{
+        max-width: 316px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: -35%;
+        z-index: 1;
+    }
+}
+
+@media(max-width: 1110px){
+    .private{
+        &__content{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__abs{
+            position: static;
+        }
+    }
+}

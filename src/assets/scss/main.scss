@@ -1,0 +1,45 @@
+@import './fonts';
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: "Larken";
+    border: none;
+    outline: none;
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
+.container{
+    max-width: 1176px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+}
+body.hidden{
+    overflow: hidden;
+}
+body, main{
+    position: relative;
+    z-index: 10;
+    background: #FFFDFE;
+}
+.main{
+    min-height: 100vh;
+    padding-top: 40px;
+}
+@import './header';
+@import './invest';
+@import './claims';
+@import './private';
+@import './about';
+@import './teams';
+@import './help';
+@import './footer';

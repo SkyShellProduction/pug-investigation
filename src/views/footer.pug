@@ -1,0 +1,40 @@
+- 
+    var social = [
+            {url: "https://facebook.com", img: "../assets/img/facebbok.svg"},
+            {url: "https://twitter.com", img: "../assets/img/twitter.svg"},
+            {url: "https://linkedin.com", img: "../assets/img/linkedin.svg"},
+        ]
+-   
+    var links = [
+            [
+                {url: "#!", name: "New"}, {url: "#!", name: "Upcoming"}, {url: "#!", name: "Man collection"}, {url: "#!", name: "On sale"}, {url: "#!", name: "Live Demo"},
+            ],
+            [
+                {url: "#!", name: "Instagram post"}, {url: "#!", name: "Blog"}, {url: "#!", name: "Live demo"}
+            ],
+            [
+                {url: "#!", name: "Live Chat"}, {url: "#!", name: "Blog"}
+            ]
+        ]
+- var sectionNames = ['Product', 'Resources', 'Contact Us']
+footer.footer 
+    .container 
+        .footer__content 
+            .footer__social 
+                h3.footer__logo SAC 
+                p.footer__descr We help customer to find best produt near them, not time spent searchig for best one.
+                ul.footer__social-links
+                    each val in social 
+                        li 
+                            a(href=val.url).footer__social-link
+                                img(src=val.img, alt="")
+            .footer__links 
+                - for(var x = 0; x < sectionNames.length; x++)
+                    ul.footer__list 
+                        h3.footer__subject #{sectionNames[x]}
+                        each val in links[x]
+                            li 
+                                a(href=val.url).footer__link #{val.name}
+        .footer__bottom 
+            p.footer__copyright Copyright © 2021 Pansy 
+            p.footer__copyright Created by Pansy 
