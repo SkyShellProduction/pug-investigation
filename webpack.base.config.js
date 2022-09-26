@@ -32,7 +32,7 @@ module.exports = {
     output: {
         filename: `${PATHS.assets}js/[name].js`,
         path: path.resolve(__dirname, PATHS.dist),
-        publicPath: '/pug-investigation/'
+        publicPath: '/'
     },
     optimization: {
         splitChunks: {
